@@ -1,0 +1,21 @@
+{
+  "availableSizes": [
+    "XS",
+    "S",
+    "M",
+    "L",
+    "XL"
+  ],
+  "availableColors": [
+    "Blue",
+    "Orange",
+    "Purple",
+    "White",
+    "Yellow",
+    "Gray",
+    "Black",
+    "Green"
+  ],
+  "preferredSize": "S",
+  "preferredColor": "White"
+}

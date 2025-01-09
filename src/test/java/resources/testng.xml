@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Suite">
+    <test name="All Tests" verbose="2">
+        <classes>
+            <class name="register.RegisterTest"/>
+            <class name="login.LoginTest"/>
+            <class name="forgotpassword.ForgotPasswordTest" />
+            <class name="home.HomeTest"/>
+            <class name="home.HomeTest2"/>
+            <class name="productlist.ProductListPageTest"/>
+            <class name="productdetails.ProductDetailsPageTest"/>
+            <class name="shipping.ShippingAddressTest"/>
+            <class name="payment.PaymentPageTest"/>
+        </classes>
+    </test>
+</suite>
