@@ -27,15 +27,15 @@ public class ForgotPasswordTest extends BaseTest {
         homePO = new HomePO(driver);
         userDetails = new LoginData().loginData();
 
-        Reporter.log("Step 1: Navigate to Home Page", true);
+        Reporter.log("Navigate to Home Page", true);
         loginPO.navigateToHomePage();
         Assert.assertTrue(homePO.isPageTitleDisplayed("Home Page"), "Home Page title is not displayed!");
 
-        Reporter.log("Step 2: Click on Sign In link", true);
+        Reporter.log("Click on Sign In link", true);
         loginPO.clickSignInLink();
         Assert.assertTrue(homePO.isPageTitleDisplayed("Customer Login"), "Login Page title is not displayed!");
 
-        Reporter.log("Step 3: Click on Forgot Your Password? link", true);
+        Reporter.log("Click on Forgot Your Password? link", true);
         loginPO.clickOnForgotYourPasswordLink();
         Assert.assertTrue(homePO.isPageTitleDisplayed("Forgot Your Password?"), "Forgot Your Password Page title is not displayed!");
     }

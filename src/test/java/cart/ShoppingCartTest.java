@@ -38,14 +38,16 @@ public class ShoppingCartTest extends BaseTest {
         Assert.assertTrue(homePO.isPageTitleDisplayed("Shopping Cart"), "Shopping Cart page title is not displayed!");
     }
 
-    @Test(priority = 1, description = "Verify that the user is able to expand 'Estimate Shipping and Tax' section after clicking on 'Estimate Shipping and Tax' section.")
+    @Test(priority = 1,
+            description = "Verify that the user is able to expand 'Estimate Shipping and Tax' section after clicking on 'Estimate Shipping and Tax' section.")
     public void verifyThatTheUserCanExpandEstimateShippingAndTaxSectionAfterClickingOnEstimateShippingAndTaxSection() {
         Reporter.log("Step 1: Click on 'Estimate Shipping and Tax' text", true);
         shoppingCartPO.clickOnEstimateShippingAndTaxText();
         Assert.assertTrue(shoppingCartPO.isExpandedEstimateShippingAndTaxSectionDisplayed(), "Estimate Shipping and Tax section is not displayed!");
     }
 
-    @Test(priority = 2, description = "Verify that validation message is displayed when invalid discount code is entered.")
+    @Test(priority = 2,
+            description = "Verify that validation message is displayed when invalid discount code is entered.")
     public void verifyThatValidationMessageIsDisplayedWhenInvalidDiscountCodeIsEntered() {
         String actualErrorMessage;
         String expectedErrorMessage = "The coupon code \"" + Constants.INVALID_DISCOUNT_CODE + "\" is not valid.";
@@ -61,7 +63,8 @@ public class ShoppingCartTest extends BaseTest {
         Assert.assertEquals(actualErrorMessage, expectedErrorMessage, "Invalid discount code validation message is not displayed!");
     }
 
-    @Test(priority = 3, description = "Estimate Shipping and Tax > Verify that when the user selects a country without a predefined state list from the 'Country' dropdown, " +
+    @Test(priority = 3,
+            description = "Estimate Shipping and Tax > Verify that when the user selects a country without a predefined state list from the 'Country' dropdown, " +
             "the 'State/Province' field is changed from a dropdown to a text field, " +
             "and the 'Best Way' option is not displayed for any country other than the USA")
     public void verifyThatTheStateFieldChangesFromDropdownToTextFieldWhenTheUserSelectsACountryThatDoesNotHavePredefinedStateList() {
